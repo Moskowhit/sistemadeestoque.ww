@@ -1,0 +1,75 @@
+Z:\ProjetosLip2\Conexao_BD\BLL\bin\Debug\BLL.dll
+Z:\ProjetosLip2\Conexao_BD\BLL\bin\Debug\BLL.pdb
+Z:\ProjetosLip2\Conexao_BD\BLL\bin\Debug\DAL.dll
+Z:\ProjetosLip2\Conexao_BD\BLL\bin\Debug\Model.dll
+Z:\ProjetosLip2\Conexao_BD\BLL\bin\Debug\DAL.pdb
+Z:\ProjetosLip2\Conexao_BD\BLL\bin\Debug\Model.pdb
+Z:\ProjetosLip2\Conexao_BD\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+Z:\ProjetosLip2\Conexao_BD\BLL\obj\Debug\BLL.dll
+Z:\ProjetosLip2\Conexao_BD\BLL\obj\Debug\BLL.pdb
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\bin\Debug\BLL.dll
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\bin\Debug\BLL.pdb
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\bin\Debug\DAL.dll
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\bin\Debug\Model.dll
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\bin\Debug\DAL.pdb
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\bin\Debug\Model.pdb
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\obj\Debug\BLL.dll
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\BLL\obj\Debug\BLL.pdb
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\BLL.dll
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\BLL.pdb
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\DAL.dll
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\Model.dll
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\DAL.pdb
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\Model.pdb
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.dll
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.pdb
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\BLL.dll
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\BLL.pdb
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\DAL.dll
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\Model.dll
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\DAL.pdb
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\bin\Debug\Model.pdb
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.dll
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\BLL\obj\Debug\BLL.pdb
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\BLL.dll
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\BLL.pdb
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\DAL.dll
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\Model.dll
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\DAL.pdb
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\Model.pdb
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.dll
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.pdb
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\BLL.dll
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\BLL.pdb
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\DAL.dll
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\Model.dll
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\DAL.pdb
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\bin\Debug\Model.pdb
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.dll
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\BLL\obj\Debug\BLL.pdb
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\bin\Debug\BLL.dll
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\bin\Debug\BLL.pdb
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\bin\Debug\DAL.dll
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\bin\Debug\Model.dll
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\bin\Debug\DAL.pdb
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\bin\Debug\Model.pdb
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.dll
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.pdb
