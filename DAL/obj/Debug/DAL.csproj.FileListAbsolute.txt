@@ -1,0 +1,61 @@
+Z:\ProjetosLip2\Conexao_BD\DAL\bin\Debug\DAL.dll
+Z:\ProjetosLip2\Conexao_BD\DAL\bin\Debug\DAL.pdb
+Z:\ProjetosLip2\Conexao_BD\DAL\bin\Debug\Model.dll
+Z:\ProjetosLip2\Conexao_BD\DAL\bin\Debug\Model.pdb
+Z:\ProjetosLip2\Conexao_BD\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+Z:\ProjetosLip2\Conexao_BD\DAL\obj\Debug\DAL.dll
+Z:\ProjetosLip2\Conexao_BD\DAL\obj\Debug\DAL.pdb
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\bin\Debug\DAL.dll
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\bin\Debug\DAL.pdb
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\bin\Debug\Model.dll
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\bin\Debug\Model.pdb
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\obj\Debug\DAL.dll
+C:\2019\2019-2\POOII\CrudC#\Conexao_BD\DAL\obj\Debug\DAL.pdb
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\bin\Debug\DAL.dll
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\bin\Debug\DAL.pdb
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\bin\Debug\Model.dll
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\bin\Debug\Model.pdb
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.dll
+C:\Users\Samsung\Desktop\Terca\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.pdb
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\bin\Debug\DAL.dll
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\bin\Debug\DAL.pdb
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\bin\Debug\Model.dll
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\bin\Debug\Model.pdb
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.dll
+C:\Users\SANDRA\Desktop\ProjetosTestar\Aula 07 - Meu\Conexao_BD\DAL\obj\Debug\DAL.pdb
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\bin\Debug\DAL.dll
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\bin\Debug\DAL.pdb
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\bin\Debug\Model.dll
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\bin\Debug\Model.pdb
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.dll
+C:\Users\SANDRA\Desktop\Aula EAD\1-ProjetosTestar\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.pdb
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\bin\Debug\DAL.dll
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\bin\Debug\DAL.pdb
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\bin\Debug\Model.dll
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\bin\Debug\Model.pdb
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.dll
+C:\Users\User\Downloads\CRUD_CSHARP\CRUD_CSHARP\Conexao_BD\DAL\obj\Debug\DAL.pdb
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\bin\Debug\DAL.dll
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\bin\Debug\DAL.pdb
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\bin\Debug\Model.dll
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\bin\Debug\Model.pdb
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\obj\Debug\DAL.dll
+C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\DAL\obj\Debug\DAL.pdb
