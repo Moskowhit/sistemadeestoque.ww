@@ -67,7 +67,7 @@ namespace DAL
             string query = "INSERT INTO Funcionarios (Nome, Rg, Cpf, NomeUser, SenhaUser) " +
                            "OUTPUT INSERTED.IdFunc VALUES (@Nome, @Rg, @Cpf, @NomeUser, @SenhaUser)";
 
-            using (SqlConnection conexao = new SqlConnection("DESKTOP-9D5DMOS\\SQLEXPRESS;Database=BD_floricultura;Trusted_Connection=True;"))
+            using (SqlConnection conexao = new SqlConnection("WESLEY\\SQLEXPRESS;Database=BD_floricultura;Trusted_Connection=True;"))
             {
                 using (SqlCommand comando = new SqlCommand(query, conexao))
                 {

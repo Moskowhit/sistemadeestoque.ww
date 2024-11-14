@@ -19,7 +19,7 @@ namespace DAL
  Database=BD_POOII;User Id= sa; Password=12345678";*/
 
         private static string caminho =
-             @"Server=DESKTOP-9D5DMOS\SQLEXPRESS;
+             @"Server=WESLEY\SQLEXPRESS;
  Database=BD_Floricultura;Integrated Security = True";
         //veja no site https://www.connectionstrings.com
         /* connectionString="Data Source=NOMESERVIDOR;

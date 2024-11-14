@@ -39,3 +39,9 @@ C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\Model\obj\Debug\Model.csproj.A
 C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\Model\obj\Debug\Model.dll
 C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\Model\obj\Debug\Model.pdb
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\Model\bin\Debug\Model.dll
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\Model\bin\Debug\Model.pdb
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\Model\obj\Debug\Model.dll
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\Model\obj\Debug\Model.pdb

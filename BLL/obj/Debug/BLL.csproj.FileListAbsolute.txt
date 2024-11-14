@@ -73,3 +73,14 @@ C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.csproj.CoreC
 C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.csproj.Up2Date
 C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.dll
 C:\Users\vfamilia\Downloads\Conexao_BD\Conexao_BD\BLL\obj\Debug\BLL.pdb
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\bin\Debug\BLL.dll
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\bin\Debug\BLL.pdb
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\bin\Debug\DAL.dll
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\bin\Debug\Model.dll
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\bin\Debug\DAL.pdb
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\bin\Debug\Model.pdb
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\obj\Debug\BLL.dll
+C:\Users\User\source\repos\sistemadeestoque.ww\Nova pasta (3)\BLL\obj\Debug\BLL.pdb

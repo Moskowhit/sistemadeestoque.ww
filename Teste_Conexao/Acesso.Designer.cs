@@ -38,7 +38,6 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnAdministrador = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -52,7 +51,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(639, 363);
+            this.label1.Location = new System.Drawing.Point(644, 234);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 39);
             this.label1.TabIndex = 0;
@@ -125,7 +124,7 @@
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(210, 39);
             this.BtnEntrar.TabIndex = 7;
-            this.BtnEntrar.Text = "Funcionário";
+            this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.UseVisualStyleBackColor = true;
             this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
             // 
@@ -162,18 +161,6 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // btnAdministrador
-            // 
-            this.btnAdministrador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.btnAdministrador.Location = new System.Drawing.Point(596, 450);
-            this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(210, 38);
-            this.btnAdministrador.TabIndex = 11;
-            this.btnAdministrador.Text = "Administrador";
-            this.btnAdministrador.UseVisualStyleBackColor = true;
-            this.btnAdministrador.Click += new System.EventHandler(this.btnAdministrador_Click);
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
@@ -193,7 +180,6 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1386, 749);
-            this.Controls.Add(this.btnAdministrador);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
@@ -229,7 +215,6 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnAdministrador;
         private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

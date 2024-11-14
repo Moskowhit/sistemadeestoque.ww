@@ -19,7 +19,7 @@ namespace Teste_Conexao
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            FrmUsuario obj01 = new FrmUsuario();
+            Cadastro obj01 = new Cadastro();
             this.Hide();
             obj01.ShowDialog();
         }
@@ -28,7 +28,7 @@ namespace Teste_Conexao
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            FrmProdutos obj02 = new FrmProdutos();
+            Administrador obj02 = new Administrador();
             this.Hide();
             obj02.ShowDialog();
         }
@@ -45,7 +45,7 @@ namespace Teste_Conexao
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            FrmUsuario form = new FrmUsuario();
+            Cadastro form = new Cadastro();
             form.Show();
             this.Visible = false;
         }

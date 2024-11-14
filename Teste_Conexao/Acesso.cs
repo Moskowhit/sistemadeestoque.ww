@@ -34,10 +34,10 @@ namespace Teste_Conexao
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
             // Defina a string de conexão
-            string connectionString = @"Data Source=DESKTOP-9D5DMOS\SQLEXPRESS;Initial Catalog=BD_Floricultura;Integrated Security=True;";
+            string connectionString = @"Data Source=WESLEY\SQLEXPRESS;Initial Catalog=BD_Floricultura;Integrated Security=True;";
 
-            // Defina a consulta SQL para buscar 'nome_user' e 'senha_user' com base na entrada
-            string query = "SELECT nome_user, senha_user FROM funcionarios WHERE nome_user = @nomeUser AND senha_user = @senhaUser";
+            // Defina a consulta SQL para buscar 'nome_user', 'senha_user' e 'tipo_usuario' com base na entrada
+            string query = "SELECT nome_user, senha_user, tipo_usuario FROM funcionarios WHERE nome_user = @nomeUser AND senha_user = @senhaUser";
 
             // Abrindo a conexão e executando a consulta
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -57,9 +57,24 @@ namespace Teste_Conexao
                     if (reader.Read())
                     {
                         // Usuário e senha encontrados
+                        string tipoUsuario = reader["tipo_usuario"].ToString();
+
                         MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Form1 form = new Form1();
-                        form.Show();
+
+                        // Verificar o tipo de usuário e abrir o formulário correspondente
+                        if (tipoUsuario == "Administrador")
+                        {
+                            // Abra o formulário de administrador
+                            Administrador adminForm = new Administrador(); // Suponha que você tenha um formulário chamado 'AdminForm'
+                            adminForm.Show();
+                        }
+                        else if (tipoUsuario == "Funcionario")
+                        {
+                            // Abra o formulário de funcionário
+                             Funcionario form = new Funcionario(); // Suponha que você tenha um formulário chamado 'FuncionarioForm'
+                                form.Show();
+                        }
+
                         this.Close();
                     }
                     else
@@ -73,13 +88,10 @@ namespace Teste_Conexao
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao buscar dados: " + ex.Message);
-
                 }
-         
-            
-             }
+            }
 
-            
+
 
 
         }
