@@ -258,7 +258,9 @@ namespace Teste_Conexao
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            estoqueadm form = new estoqueadm();
+            form.Show();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -293,7 +295,30 @@ namespace Teste_Conexao
 
         private void button6_Click(object sender, EventArgs e)
         {
+            ProdutosAdm form = new ProdutosAdm();
+            form.Show();
+            this.Close();
+        }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            PedidosAdm form = new PedidosAdm();
+            form.Show();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ClientesAdm form = new ClientesAdm();
+            form.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FornecedoresAdm form = new FornecedoresAdm();
+            form.Show();
+            this.Close();
         }
     }
 }

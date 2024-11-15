@@ -60,6 +60,7 @@
             this.button8.TabIndex = 35;
             this.button8.Text = "Pedidos";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button6
             // 
@@ -111,6 +112,7 @@
             this.button2.TabIndex = 36;
             this.button2.Text = "Clientes";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -121,6 +123,7 @@
             this.button3.TabIndex = 37;
             this.button3.Text = "Fornecedores";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
