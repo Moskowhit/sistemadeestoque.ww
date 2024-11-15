@@ -56,13 +56,177 @@ namespace Teste_Conexao
         }
 
         private void btnGravar_Click(object sender, EventArgs e)
-        {
 
+        {
+            // Captura os valores dos campos de entrada
+            string nomeProduto = txtProduto.Text;
+            string codigoBarras = txtCodigoBarras.Text;
+            int quantidade;
+            string fornecedor = txtFornecedor.Text;
+            DateTime dataEntrada;
+
+            // Verifica se a quantidade e a data são válidas
+            if (!int.TryParse(txtQuantidade.Text, out quantidade))
+            {
+                MessageBox.Show("Quantidade inválida.");
+                return;
+            }
+
+            if (!DateTime.TryParse(txtDatadeentrada.Text, out dataEntrada))
+            {
+                MessageBox.Show("Data de entrada inválida.");
+                return;
+            }
+
+            // String de conexão com o banco de dados
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_floricultura;Trusted_Connection=True;";
+
+            // Comando SQL para inserir o produto
+            string query = "INSERT INTO Produtos (NomeProduto, CodigoBarras, Quantidade, Fornecedor, DataEntrada) " +
+                           "VALUES (@NomeProduto, @CodigoBarras, @Quantidade, @Fornecedor, @DataEntrada)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@NomeProduto", nomeProduto);
+                command.Parameters.AddWithValue("@CodigoBarras", codigoBarras);
+                command.Parameters.AddWithValue("@Quantidade", quantidade);
+                command.Parameters.AddWithValue("@Fornecedor", fornecedor);
+                command.Parameters.AddWithValue("@DataEntrada", dataEntrada);
+
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Produto cadastrado com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao cadastrar o produto.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
+                }
+            }
         }
 
-        private void txtNome_TextChanged(object sender, EventArgs e)
+        private void btnAlterar_Click(object sender, EventArgs e)
         {
+            // Captura os valores dos campos de entrada
+            string nomeProduto = txtProduto.Text;
+            string codigoBarras = txtCodigoBarras.Text;
+            int quantidade;
+            string fornecedor = txtFornecedor.Text;
+            DateTime dataEntrada;
 
+            // Validações
+            if (!int.TryParse(txtQuantidade.Text, out quantidade))
+            {
+                MessageBox.Show("Quantidade inválida.");
+                return;
+            }
+
+            if (!DateTime.TryParse(txtDatadeentrada.Text, out dataEntrada))
+            {
+                MessageBox.Show("Data de entrada inválida.");
+                return;
+            }
+
+            // Conexão com o banco de dados
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_floricultura;Trusted_Connection=True;";
+            string query = "UPDATE Produtos SET NomeProduto = @NomeProduto, Quantidade = @Quantidade, " +
+                           "Fornecedor = @Fornecedor, DataEntrada = @DataEntrada " +
+                           "WHERE CodigoBarras = @CodigoBarras";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@NomeProduto", nomeProduto);
+                command.Parameters.AddWithValue("@CodigoBarras", codigoBarras);
+                command.Parameters.AddWithValue("@Quantidade", quantidade);
+                command.Parameters.AddWithValue("@Fornecedor", fornecedor);
+                command.Parameters.AddWithValue("@DataEntrada", dataEntrada);
+
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Produto alterado com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Produto não encontrado ou código de barras incorreto.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
+                }
+            }
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            // Captura o código de barras do produto a ser excluído
+            string codigoBarras = txtCodigoBarras.Text;
+
+            // Verificação básica
+            if (string.IsNullOrEmpty(codigoBarras))
+            {
+                MessageBox.Show("Informe o código de barras do produto a ser excluído.");
+                return;
+            }
+
+            // String de conexão com o banco
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_floricultura;Trusted_Connection=True;";
+            string query = "DELETE FROM Produtos WHERE CodigoBarras = @CodigoBarras";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@CodigoBarras", codigoBarras);
+
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Produto excluído com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Produto não encontrado ou código de barras incorreto.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
+                }
+            }
+        }
+        private void LimparCampos()
+        {
+            txtProduto.Text = string.Empty;
+            txtCodigoBarras.Text = string.Empty;
+            txtQuantidade.Text = string.Empty;
+            txtFornecedor.Text = string.Empty;
+            txtDatadeentrada.Text = string.Empty;
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+            MessageBox.Show("Campos limpos com sucesso!");
         }
     }
 }
