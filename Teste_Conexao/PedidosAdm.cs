@@ -19,12 +19,19 @@ namespace Teste_Conexao
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-
+            Administrador form = new Administrador();
+            form.Show();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
