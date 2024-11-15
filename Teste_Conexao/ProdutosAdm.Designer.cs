@@ -35,20 +35,20 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCpf = new System.Windows.Forms.TextBox();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtRg = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
             this.lblRg = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.txtCodigoBarras = new System.Windows.Forms.TextBox();
+            this.txtQuantidade = new System.Windows.Forms.TextBox();
+            this.txtFornecedor = new System.Windows.Forms.TextBox();
+            this.txtDatadeentrada = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -121,13 +121,6 @@
             this.label6.TabIndex = 66;
             this.label6.Text = "Cadastrar Produto";
             // 
-            // txtCpf
-            // 
-            this.txtCpf.Location = new System.Drawing.Point(95, 130);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(220, 20);
-            this.txtCpf.TabIndex = 77;
-            // 
             // btnAlterar
             // 
             this.btnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -155,8 +148,9 @@
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(81, 23);
             this.btnGravar.TabIndex = 80;
-            this.btnGravar.Text = "Gravar";
+            this.btnGravar.Text = "Cadastrar";
             this.btnGravar.UseVisualStyleBackColor = false;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnLimpar
             // 
@@ -168,36 +162,6 @@
             this.btnLimpar.TabIndex = 82;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(95, 182);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(219, 20);
-            this.txtSenha.TabIndex = 79;
-            this.txtSenha.UseSystemPasswordChar = true;
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(95, 156);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(219, 20);
-            this.txtUsuario.TabIndex = 78;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
-            // 
-            // txtRg
-            // 
-            this.txtRg.Location = new System.Drawing.Point(96, 107);
-            this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(219, 20);
-            this.txtRg.TabIndex = 76;
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(95, 81);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(219, 20);
-            this.txtNome.TabIndex = 75;
             // 
             // lblSenha
             // 
@@ -251,20 +215,55 @@
             this.lblNome.Text = "Produto:";
             this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
             // 
+            // txtProduto
+            // 
+            this.txtProduto.Location = new System.Drawing.Point(96, 84);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(218, 20);
+            this.txtProduto.TabIndex = 84;
+            // 
+            // txtCodigoBarras
+            // 
+            this.txtCodigoBarras.Location = new System.Drawing.Point(95, 107);
+            this.txtCodigoBarras.Name = "txtCodigoBarras";
+            this.txtCodigoBarras.Size = new System.Drawing.Size(219, 20);
+            this.txtCodigoBarras.TabIndex = 85;
+            // 
+            // txtQuantidade
+            // 
+            this.txtQuantidade.Location = new System.Drawing.Point(95, 130);
+            this.txtQuantidade.Name = "txtQuantidade";
+            this.txtQuantidade.Size = new System.Drawing.Size(219, 20);
+            this.txtQuantidade.TabIndex = 86;
+            // 
+            // txtFornecedor
+            // 
+            this.txtFornecedor.Location = new System.Drawing.Point(95, 156);
+            this.txtFornecedor.Name = "txtFornecedor";
+            this.txtFornecedor.Size = new System.Drawing.Size(219, 20);
+            this.txtFornecedor.TabIndex = 87;
+            // 
+            // txtDatadeentrada
+            // 
+            this.txtDatadeentrada.Location = new System.Drawing.Point(95, 186);
+            this.txtDatadeentrada.Name = "txtDatadeentrada";
+            this.txtDatadeentrada.Size = new System.Drawing.Size(219, 20);
+            this.txtDatadeentrada.TabIndex = 88;
+            // 
             // ProdutosAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtCpf);
+            this.Controls.Add(this.txtDatadeentrada);
+            this.Controls.Add(this.txtFornecedor);
+            this.Controls.Add(this.txtQuantidade);
+            this.Controls.Add(this.txtCodigoBarras);
+            this.Controls.Add(this.txtProduto);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.txtRg);
-            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblCpf);
@@ -296,19 +295,19 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.TextBox txtSenha;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtRg;
-        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblCpf;
         private System.Windows.Forms.Label lblRg;
         private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.TextBox txtProduto;
+        private System.Windows.Forms.TextBox txtCodigoBarras;
+        private System.Windows.Forms.TextBox txtQuantidade;
+        private System.Windows.Forms.TextBox txtFornecedor;
+        private System.Windows.Forms.TextBox txtDatadeentrada;
     }
 }

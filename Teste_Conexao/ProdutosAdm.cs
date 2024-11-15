@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Teste_Conexao
 {
@@ -52,6 +53,16 @@ namespace Teste_Conexao
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
