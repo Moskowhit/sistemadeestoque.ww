@@ -79,7 +79,7 @@ namespace Teste_Conexao
             }
 
             // String de conexão com o banco de dados
-            string connectionString = @"Server=wesley\sqlexpress;Database=BD_floricultura;Trusted_Connection=True;";
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_DESKTOP;Trusted_Connection=True;";
 
             // Comando SQL para inserir o produto
             string query = "INSERT INTO Produtos (NomeProduto, CodigoBarras, Quantidade, Fornecedor, DataEntrada) " +
@@ -227,6 +227,11 @@ namespace Teste_Conexao
         {
             LimparCampos();
             MessageBox.Show("Campos limpos com sucesso!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

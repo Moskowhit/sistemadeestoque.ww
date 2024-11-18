@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace Teste_Conexao
 {
     public partial class estoqueadm : Form
     {
+        private string connectionString;
+
         public estoqueadm()
         {
             InitializeComponent();
@@ -123,5 +126,44 @@ namespace Teste_Conexao
         {
 
         }
+
+        private void btnbuscarproduto_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Server=WESLEY\SQLEXPRESS;Database=BD_DESKTOP;Integrated Security=True;";
+
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    // Abrir conexão
+                    connection.Open();
+
+                    var sqlQuery = "SELECT *FROM Produtos";
+                    using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, connection))
+                    {
+
+                        using (DataTable dt = new DataTable())
+                        {
+                            da.Fill(dt);
+                            dataGridView1.DataSource = dt;
+                        }
+                    }
+
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao buscar produtos: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
-}
+
+    }
+
+    
+
+    
+

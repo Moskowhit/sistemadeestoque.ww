@@ -34,7 +34,7 @@ namespace Teste_Conexao
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
             // Defina a string de conexão
-            string connectionString = @"Data Source=WESLEY\SQLEXPRESS;Initial Catalog=BD_Floricultura;Integrated Security=True;";
+            string connectionString = @"Data Source=WESLEY\SQLEXPRESS;Initial Catalog=BD_DESKTOP;Integrated Security=True;";
 
             // Defina a consulta SQL para buscar 'nome_user', 'senha_user' e 'tipo_usuario' com base na entrada
             string query = "SELECT nome_user, senha_user, tipo_usuario FROM funcionarios WHERE nome_user = @nomeUser AND senha_user = @senhaUser";

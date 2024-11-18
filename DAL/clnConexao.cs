@@ -20,7 +20,7 @@ namespace DAL
 
         private static string caminho =
              @"Server=WESLEY\SQLEXPRESS;
- Database=BD_Floricultura;Integrated Security = True";
+ Database=BD_DESKTOP;Integrated Security = True";
         //veja no site https://www.connectionstrings.com
         /* connectionString="Data Source=NOMESERVIDOR;
         initial catalog = Agenda; Integrated Security = True"*/

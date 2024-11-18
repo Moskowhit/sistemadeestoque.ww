@@ -160,7 +160,7 @@ namespace Teste_Conexao
             {
                 //String de conexão com o banco de dados
                 string strConexao = @"Server=WESLEY\SQLEXPRESS;
- Database=BD_Floricultura;Integrated Security = True";
+ Database=BD_DESKTOP;Integrated Security = True";
                 //   string cmdDelete =
                 //     "DELETE produto where codbar_prod=" + txtcodBarras.Text;
                 //   SqlConnection con = new SqlConnection(strConexao);
@@ -265,8 +265,10 @@ namespace Teste_Conexao
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+           
         }
+
+
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {

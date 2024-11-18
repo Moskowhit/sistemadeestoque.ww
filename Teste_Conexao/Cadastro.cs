@@ -209,66 +209,45 @@ namespace Teste_Conexao
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-
-
-
-            DialogResult resultado = MessageBox.Show("Deseja excluir?", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-
-            if (resultado == DialogResult.OK)
+            if (!int.TryParse(txtMatricula.Text, out int idFunc))
             {
-                //String de conexão com o banco de dados
-                string strConexao = @"Server=JOREL\SQLEXPRESS;
- Database=BD_Floricultura;Integrated Security = True";
-                string cmdDelete =
-                 "DELETE funcionarios where id_func =" + txtMatricula.Text;
-                SqlConnection con = new SqlConnection(strConexao);
-                SqlCommand sqlCommand = new SqlCommand(cmdDelete, con);
-                con.Open();
-                sqlCommand.ExecuteNonQuery();
-                MessageBox.Show("Dados excluidos com sucesso!");
-                btnLimpar.PerformClick();
-                con.Close();
+                MessageBox.Show("Por favor, insira um número válido na matrícula.");
+                return;
+            }
 
+            try
+            {
+                string strConexao = @"Server=WESLEY\SQLEXPRESS;Database=BD_DESKTOP;Integrated Security=True";
+                string cmdDelete = "DELETE FROM funcionarios WHERE id_func = @idFunc";
 
-                //dialogresult resultado = messagebox.show("deseja excluir?", "atenção", messageboxbuttons.okcancel, messageboxicon.exclamation);
+                using (SqlConnection con = new SqlConnection(strConexao))
+                {
+                    using (SqlCommand sqlCommand = new SqlCommand(cmdDelete, con))
+                    {
+                        sqlCommand.Parameters.AddWithValue("@idFunc", idFunc);
+                        con.Open();
+                        int rowsAffected = sqlCommand.ExecuteNonQuery();
 
-                //if (resultado == dialogresult.ok)
-                //{
-                //    messagebox.show("excluir...");
-                //    recuperar o id do funcionario
-
-                //    criar uma conexao
-                //    conexao = clnconexao.getconexao();
-                //    int matr = 0;
-                //    try
-                //    {
-                //        recuperar o id(matricula) do form(textbox)
-                //        matr = convert.toint32(txtmatricula.text);
-                //    }
-                //    catch (exception ex)
-                //    {
-                //        messagebox.show("falha ao converter! " +
-                //            "digite somente números" + ex.message);
-                //    }
-                //    criar a conexao
-                //    criar o objeto funcionario e atribuir o id
-                //    criar o objeto funcionariodal
-                //    com o funcionariodal
-                //    abrir conexao
-                //    executar a exclusão
-                //    enviar msg informando a exclusão
-                //    fechar conexao
-                //}
-                //else
-                //{
-                //    messagebox.show("cancelar...");
-
-                //}
-
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Funcionário excluído com sucesso!");
+                            btnLimpar.PerformClick(); // Limpar os campos
+                        }
+                        else
+                        {
+                            MessageBox.Show("Funcionário não encontrado.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao excluir o funcionário: {ex.Message}");
             }
         }
 
-            private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Close();
         }
