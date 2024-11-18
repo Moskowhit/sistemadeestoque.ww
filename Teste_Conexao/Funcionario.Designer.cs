@@ -44,6 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblBusca = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlBusca.SuspendLayout();
@@ -145,6 +146,7 @@
             this.pnlBusca.BackColor = System.Drawing.Color.PowderBlue;
             this.pnlBusca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlBusca.BackgroundImage")));
             this.pnlBusca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBusca.Controls.Add(this.label6);
             this.pnlBusca.Controls.Add(this.button4);
             this.pnlBusca.Controls.Add(this.textBox1);
             this.pnlBusca.Controls.Add(this.label4);
@@ -203,6 +205,15 @@
             this.pictureBox3.TabIndex = 48;
             this.pictureBox3.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(103, 144);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 76;
+            this.label6.Text = "label6";
+            // 
             // Funcionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,5 +260,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label6;
     }
 }

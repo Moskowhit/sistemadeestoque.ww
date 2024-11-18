@@ -33,5 +33,20 @@ namespace Teste_Conexao
         {
             Application.Exit();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCpf_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PedidosAdm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -320,5 +320,10 @@ namespace Teste_Conexao
             form.Show();
             this.Close();
         }
+
+        private void pnlBusca_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
