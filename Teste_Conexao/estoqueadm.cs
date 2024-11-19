@@ -139,7 +139,7 @@ namespace Teste_Conexao
                     // Abrir conexão
                     connection.Open();
 
-                    var sqlQuery = "SELECT *FROM Produtos";
+                    var sqlQuery = "SELECT *FROM Produtos where CodigoBarras = '" + txtBuscarProduto.Text + "'";
                     using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, connection))
                     {
 

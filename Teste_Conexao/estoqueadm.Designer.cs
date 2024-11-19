@@ -38,7 +38,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnbuscarproduto = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscarProduto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblBusca = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -154,12 +154,13 @@
             this.btnbuscarproduto.UseVisualStyleBackColor = false;
             this.btnbuscarproduto.Click += new System.EventHandler(this.btnbuscarproduto_Click);
             // 
-            // textBox1
+            // txtBuscarProduto
             // 
-            this.textBox1.Location = new System.Drawing.Point(281, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 20);
-            this.textBox1.TabIndex = 81;
+            this.txtBuscarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarProduto.Location = new System.Drawing.Point(281, 123);
+            this.txtBuscarProduto.Name = "txtBuscarProduto";
+            this.txtBuscarProduto.Size = new System.Drawing.Size(202, 23);
+            this.txtBuscarProduto.TabIndex = 81;
             // 
             // label4
             // 
@@ -200,7 +201,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnbuscarproduto);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBuscarProduto);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblBusca);
             this.Controls.Add(this.label2);
@@ -241,7 +242,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnbuscarproduto;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscarProduto;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblBusca;
         private System.Windows.Forms.DataGridView dataGridView1;
