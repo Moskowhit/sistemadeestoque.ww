@@ -49,6 +49,8 @@
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.txtFornecedor = new System.Windows.Forms.TextBox();
             this.txtDatadeentrada = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -102,7 +104,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-9, -21);
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(822, 484);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -124,7 +126,7 @@
             // btnAlterar
             // 
             this.btnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAlterar.Location = new System.Drawing.Point(183, 216);
+            this.btnAlterar.Location = new System.Drawing.Point(191, 251);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(81, 23);
             this.btnAlterar.TabIndex = 81;
@@ -135,7 +137,7 @@
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnExcluir.Location = new System.Drawing.Point(270, 216);
+            this.btnExcluir.Location = new System.Drawing.Point(278, 251);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(81, 23);
             this.btnExcluir.TabIndex = 83;
@@ -146,7 +148,7 @@
             // btnGravar
             // 
             this.btnGravar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnGravar.Location = new System.Drawing.Point(96, 216);
+            this.btnGravar.Location = new System.Drawing.Point(95, 251);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(81, 23);
             this.btnGravar.TabIndex = 80;
@@ -158,7 +160,7 @@
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLimpar.Location = new System.Drawing.Point(30, 216);
+            this.btnLimpar.Location = new System.Drawing.Point(17, 251);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(61, 23);
             this.btnLimpar.TabIndex = 82;
@@ -170,7 +172,7 @@
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblSenha.Location = new System.Drawing.Point(4, 189);
+            this.lblSenha.Location = new System.Drawing.Point(23, 221);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(87, 13);
             this.lblSenha.TabIndex = 70;
@@ -181,7 +183,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblUsuario.Location = new System.Drawing.Point(19, 163);
+            this.lblUsuario.Location = new System.Drawing.Point(35, 192);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(64, 13);
             this.lblUsuario.TabIndex = 71;
@@ -191,7 +193,7 @@
             // 
             this.lblCpf.AutoSize = true;
             this.lblCpf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblCpf.Location = new System.Drawing.Point(13, 137);
+            this.lblCpf.Location = new System.Drawing.Point(35, 136);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(65, 13);
             this.lblCpf.TabIndex = 72;
@@ -201,7 +203,7 @@
             // 
             this.lblRg.AutoSize = true;
             this.lblRg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblRg.Location = new System.Drawing.Point(1, 107);
+            this.lblRg.Location = new System.Drawing.Point(23, 110);
             this.lblRg.Name = "lblRg";
             this.lblRg.Size = new System.Drawing.Size(90, 13);
             this.lblRg.TabIndex = 73;
@@ -211,7 +213,7 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblNome.Location = new System.Drawing.Point(18, 84);
+            this.lblNome.Location = new System.Drawing.Point(44, 84);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(47, 13);
             this.lblNome.TabIndex = 74;
@@ -220,44 +222,71 @@
             // 
             // txtProduto
             // 
-            this.txtProduto.Location = new System.Drawing.Point(96, 84);
+            this.txtProduto.Location = new System.Drawing.Point(141, 81);
             this.txtProduto.Name = "txtProduto";
             this.txtProduto.Size = new System.Drawing.Size(218, 20);
             this.txtProduto.TabIndex = 84;
             // 
             // txtCodigoBarras
             // 
-            this.txtCodigoBarras.Location = new System.Drawing.Point(95, 107);
+            this.txtCodigoBarras.Location = new System.Drawing.Point(141, 107);
             this.txtCodigoBarras.Name = "txtCodigoBarras";
             this.txtCodigoBarras.Size = new System.Drawing.Size(219, 20);
             this.txtCodigoBarras.TabIndex = 85;
             // 
             // txtQuantidade
             // 
-            this.txtQuantidade.Location = new System.Drawing.Point(95, 130);
+            this.txtQuantidade.Location = new System.Drawing.Point(140, 133);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(219, 20);
             this.txtQuantidade.TabIndex = 86;
             // 
             // txtFornecedor
             // 
-            this.txtFornecedor.Location = new System.Drawing.Point(95, 156);
+            this.txtFornecedor.Location = new System.Drawing.Point(141, 189);
             this.txtFornecedor.Name = "txtFornecedor";
             this.txtFornecedor.Size = new System.Drawing.Size(219, 20);
             this.txtFornecedor.TabIndex = 87;
             // 
             // txtDatadeentrada
             // 
-            this.txtDatadeentrada.Location = new System.Drawing.Point(95, 186);
+            this.txtDatadeentrada.Location = new System.Drawing.Point(140, 218);
             this.txtDatadeentrada.Name = "txtDatadeentrada";
             this.txtDatadeentrada.Size = new System.Drawing.Size(219, 20);
             this.txtDatadeentrada.TabIndex = 88;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label2.Location = new System.Drawing.Point(12, 166);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.TabIndex = 89;
+            this.label2.Text = "Unidade de medida:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Selecione uma medida",
+            "Unitário",
+            "Kilo",
+            "Pacote",
+            "Duzia"});
+            this.comboBox1.Location = new System.Drawing.Point(140, 158);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(219, 21);
+            this.comboBox1.TabIndex = 90;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ProdutosAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDatadeentrada);
             this.Controls.Add(this.txtFornecedor);
             this.Controls.Add(this.txtQuantidade);
@@ -312,5 +341,7 @@
         private System.Windows.Forms.TextBox txtQuantidade;
         private System.Windows.Forms.TextBox txtFornecedor;
         private System.Windows.Forms.TextBox txtDatadeentrada;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

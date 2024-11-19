@@ -159,6 +159,16 @@ namespace Teste_Conexao
                 }
             }
         }
+
+        private void txtBuscarProduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
     }

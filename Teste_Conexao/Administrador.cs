@@ -304,7 +304,7 @@ namespace Teste_Conexao
 
         private void button8_Click(object sender, EventArgs e)
         {
-            PedidosAdm form = new PedidosAdm();
+            Relatórioadm form = new Relatórioadm();
             form.Show();
             this.Close();
         }

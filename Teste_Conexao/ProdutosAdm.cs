@@ -64,6 +64,7 @@ namespace Teste_Conexao
             int quantidade;
             string fornecedor = txtFornecedor.Text;
             DateTime dataEntrada;
+            string Medida = comboBox1.Text;
 
             // Verifica se a quantidade e a data são válidas
             if (!int.TryParse(txtQuantidade.Text, out quantidade))
@@ -82,8 +83,8 @@ namespace Teste_Conexao
             string connectionString = @"Server=wesley\sqlexpress;Database=BD_DESKTOP;Trusted_Connection=True;";
 
             // Comando SQL para inserir o produto
-            string query = "INSERT INTO Produtos (NomeProduto, CodigoBarras, Quantidade, Fornecedor, DataEntrada) " +
-                           "VALUES (@NomeProduto, @CodigoBarras, @Quantidade, @Fornecedor, @DataEntrada)";
+            string query = "INSERT INTO Produtos (NomeProduto, CodigoBarras, Quantidade, Fornecedor, DataEntrada, Medida) " +
+                           "VALUES (@NomeProduto, @CodigoBarras, @Quantidade, @Fornecedor, @DataEntrada, @Medida)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -93,7 +94,7 @@ namespace Teste_Conexao
                 command.Parameters.AddWithValue("@Quantidade", quantidade);
                 command.Parameters.AddWithValue("@Fornecedor", fornecedor);
                 command.Parameters.AddWithValue("@DataEntrada", dataEntrada);
-
+                command.Parameters.AddWithValue("@Medida", comboBox1.SelectedItem.ToString());
                 try
                 {
                     connection.Open();
@@ -233,5 +234,15 @@ namespace Teste_Conexao
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+
+
+           
+
+        }
+        
     }
 }

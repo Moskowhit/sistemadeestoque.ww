@@ -37,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,6 +72,12 @@
     </Compile>
     <Compile Include="estoquefunc.Designer.cs">
       <DependentUpon>estoquefunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórioadm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórioadm.Designer.cs">
+      <DependentUpon>Relatórioadm.cs</DependentUpon>
     </Compile>
     <Compile Include="FornecedoresAdm.cs">
       <SubType>Form</SubType>
@@ -139,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="estoquefunc.resx">
       <DependentUpon>estoquefunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórioadm.resx">
+      <DependentUpon>Relatórioadm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FornecedoresAdm.resx">
       <DependentUpon>FornecedoresAdm.cs</DependentUpon>
