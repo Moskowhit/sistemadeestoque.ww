@@ -58,7 +58,8 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::Teste_Conexao.Properties.Resources.fechar;
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(773, 9);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
@@ -70,7 +71,8 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Teste_Conexao.Properties.Resources.Voltar;
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(740, 9);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";

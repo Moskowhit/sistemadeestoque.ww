@@ -112,7 +112,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Teste_Conexao.Properties.Resources.Voltar;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(843, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
@@ -124,7 +124,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Teste_Conexao.Properties.Resources.fechar;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(876, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";

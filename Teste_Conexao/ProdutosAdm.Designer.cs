@@ -69,7 +69,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::Teste_Conexao.Properties.Resources.fechar;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(773, 4);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
@@ -81,7 +81,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Teste_Conexao.Properties.Resources.Voltar;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(740, 4);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
@@ -104,7 +104,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -18);
+            this.pictureBox1.Location = new System.Drawing.Point(38, -66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(822, 484);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -163,7 +163,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Teste_Conexao.Properties.Resources.Voltar;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(736, 1);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
@@ -175,7 +175,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Teste_Conexao.Properties.Resources.fechar;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(769, 1);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
