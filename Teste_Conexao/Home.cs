@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,12 +27,7 @@ namespace Teste_Conexao
 
     
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Administrador obj02 = new Administrador();
-            this.Hide();
-            obj02.ShowDialog();
-        }
+       
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -73,6 +69,16 @@ namespace Teste_Conexao
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEntrar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
         {
 
         }

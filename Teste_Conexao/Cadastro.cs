@@ -148,12 +148,7 @@ namespace Teste_Conexao
 
         }
 
-        private void btnProduto_Click(object sender, EventArgs e)
-        {
-            Administrador obj01 = new Administrador();
-            obj01.ShowDialog();
-
-        }
+       
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {

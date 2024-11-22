@@ -65,17 +65,17 @@ namespace Teste_Conexao
                         if (tipoUsuario == "Administrador")
                         {
                             // Abra o formulário de administrador
-                            Administrador adminForm = new Administrador(); // Suponha que você tenha um formulário chamado 'AdminForm'
+                            Administrador adminForm = new Administrador (); // Suponha que você tenha um formulário chamado 'AdminForm'
                             adminForm.Show();
                         }
                         else if (tipoUsuario == "Funcionario")
                         {
                             // Abra o formulário de funcionário
-                             Funcionario form = new Funcionario(); // Suponha que você tenha um formulário chamado 'FuncionarioForm'
-                                form.Show();
+                            Funcionario form = new Funcionario(); // Suponha que você tenha um formulário chamado 'FuncionarioForm'
+                            form.Show();
                         }
 
-                        this.Close();
+                       
                     }
                     else
                     {
@@ -91,20 +91,11 @@ namespace Teste_Conexao
                 }
             }
 
-
-
-
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnAdministrador_Click(object sender, EventArgs e)
         {
@@ -149,7 +140,11 @@ namespace Teste_Conexao
 
         private void Acesso_Load(object sender, EventArgs e)
         {
-
+            txtUsuario.Text = "Nome:"; // Texto inicial do placeholder
+            txtUsuario.ForeColor = Color.Gray; // Cor cinza para o placeholder
+            txtSenha.Text = "Senha:"; // Texto inicial do placeholder
+            txtSenha.ForeColor = Color.Gray; // Cor cinza
+            txtSenha.UseSystemPasswordChar = true; // Certifica-se de que o modo senha está desativado
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -182,6 +177,126 @@ namespace Teste_Conexao
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnentra_Click(object sender, EventArgs e)
+        {
+            // Defina a string de conexão
+            string connectionString = @"Data Source=WESLEY\SQLEXPRESS;Initial Catalog=BD_DESKTOP;Integrated Security=True;";
+
+            // Defina a consulta SQL para buscar 'nome_user', 'senha_user' e 'tipo_usuario' com base na entrada
+            string query = "SELECT nome_user, senha_user, tipo_usuario FROM funcionarios WHERE nome_user = @nomeUser AND senha_user = @senhaUser";
+
+            // Abrindo a conexão e executando a consulta
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@nomeUser", txtUsuario.Text); // Usuário inserido
+                command.Parameters.AddWithValue("@senhaUser", txtSenha.Text); // Senha inserida
+
+                try
+                {
+                    // Abrindo a conexão
+                    connection.Open();
+
+                    // Executando o comando e verificando se há resultados
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        // Usuário e senha encontrados
+                        string tipoUsuario = reader["tipo_usuario"].ToString();
+
+                        MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Verificar o tipo de usuário e abrir o formulário correspondente
+                        if (tipoUsuario == "Administrador")
+                        {
+                            // Abra o formulário de administrador
+                            Administrador adminForm = new Administrador(); // Suponha que você tenha um formulário chamado 'AdminForm'
+                            adminForm.Show();
+                        }
+                        else if (tipoUsuario == "Funcionario")
+                        {
+                            // Abra o formulário de funcionário
+                            Funcionario form = new Funcionario(); // Suponha que você tenha um formulário chamado 'FuncionarioForm'
+                            form.Show();
+                        }
+
+                        this.Close();
+                    }
+                    else
+                    {
+                        // Nenhum registro encontrado com as credenciais fornecidas
+                        MessageBox.Show("Usuário ou senha incorretos.", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao buscar dados: " + ex.Message);
+                }
+            }
+
+        }
+
+       
+
+        private void txtUsuario_MouseEnter(object sender, EventArgs e)
+        {
+            // Verifica se o texto atual é o placeholder
+            if (txtUsuario.Text == "Nome:")
+            {
+                txtUsuario.Text = ""; // Limpa o texto
+                txtUsuario.ForeColor = Color.Black; // Muda a cor para texto real
+            }
+        }
+
+        private void txtUsuario_MouseLeave(object sender, EventArgs e)
+        {
+            // Verifica se o campo ficou vazio
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
+            {
+                txtUsuario.Text = "Nome:"; // Restaura o placeholder
+                txtUsuario.ForeColor = Color.Gray; // Muda a cor para cinza
+            }
+        }
+
+        private void txtSenha_MouseEnter(object sender, EventArgs e)
+        {
+           
+            if (txtSenha.Text == "Senha:")
+            {
+                txtSenha.Text = ""; // Limpa o texto
+                txtSenha.ForeColor = Color.Black; // Muda para a cor padrão do texto
+                txtSenha.UseSystemPasswordChar = false; // Ativa o modo senha (*)
+            }
+        }
+
+        private void txtSenha_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSenha.Text))
+            {
+                txtSenha.UseSystemPasswordChar = true; // Desativa o modo senha
+                txtSenha.Text = "Senha:"; // Restaura o placeholder
+                txtSenha.ForeColor = Color.Gray; // Muda para a cor cinza
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

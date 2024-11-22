@@ -47,9 +47,7 @@ namespace Teste_Conexao
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Administrador form = new Administrador();
-            form.Show();
-            this.Close();
+       
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

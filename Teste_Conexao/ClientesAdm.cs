@@ -17,12 +17,7 @@ namespace Teste_Conexao
             InitializeComponent();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            Administrador form = new Administrador();
-            form.Show();
-            this.Close();
-        }
+
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {

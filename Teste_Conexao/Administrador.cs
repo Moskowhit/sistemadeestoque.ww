@@ -15,11 +15,15 @@ namespace Teste_Conexao
 {
     public partial class Administrador : Form
     {
+        
         SqlConnection conexao;
         public Administrador()
         {
             InitializeComponent();
+            
         }
+
+       
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -159,8 +163,7 @@ namespace Teste_Conexao
             if (resultado == DialogResult.OK)
             {
                 //String de conexão com o banco de dados
-                string strConexao = @"Server=WESLEY\SQLEXPRESS;
- Database=BD_DESKTOP;Integrated Security = True";
+                string strConexao = @"Server=WESLEY\SQLEXPRESS;Database=BD_DESKTOP;Integrated Security = True";
                 //   string cmdDelete =
                 //     "DELETE produto where codbar_prod=" + txtcodBarras.Text;
                 //   SqlConnection con = new SqlConnection(strConexao);
@@ -216,7 +219,7 @@ namespace Teste_Conexao
         
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Home obj = new Home();
+            Acesso obj = new Acesso();
             this.Hide();
             obj.ShowDialog();
         }
@@ -238,7 +241,7 @@ namespace Teste_Conexao
 
         private void FrmProdutos_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
