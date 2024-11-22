@@ -12,6 +12,7 @@ namespace Teste_Conexao
 {
     public partial class Funcionario : Form
     {
+            InitializeComponent();
         public Funcionario()
         {
             InitializeComponent();
