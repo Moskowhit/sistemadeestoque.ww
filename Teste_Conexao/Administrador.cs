@@ -34,7 +34,7 @@ namespace Teste_Conexao
             try
             {
                 //recuperar o id(matricula) do Form(textBox)
-                cod = Convert.ToInt32(textBox1.Text);
+                cod = Convert.ToInt32(button1.Text);
             }
             catch (Exception ex)
             {
@@ -258,7 +258,7 @@ namespace Teste_Conexao
 
         private void button1_Click(object sender, EventArgs e)
         {
-            estoqueadm form = new estoqueadm();
+            estoque form = new estoque();
             form.Show();
             this.Close();
         }
@@ -304,7 +304,7 @@ namespace Teste_Conexao
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Relatórioadm form = new Relatórioadm();
+           Pedidos form = new Pedidos();
             form.Show();
             this.Close();
         }

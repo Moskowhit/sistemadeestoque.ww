@@ -46,5 +46,26 @@ namespace Teste_Conexao
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            estoque form = new estoque();
+            form.Show();
+            this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Pedidos  form = new Pedidos();
+            form.Show();
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Relatórioadm form = new Relatórioadm();
+            form.Show();
+            this.Close();
+        }
     }
 }

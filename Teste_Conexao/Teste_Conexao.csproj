@@ -61,17 +61,11 @@
     <Compile Include="ClientesAdm.Designer.cs">
       <DependentUpon>ClientesAdm.cs</DependentUpon>
     </Compile>
-    <Compile Include="estoqueadm.cs">
+    <Compile Include="estoque.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="estoqueadm.Designer.cs">
-      <DependentUpon>estoqueadm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="estoquefunc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="estoquefunc.Designer.cs">
-      <DependentUpon>estoquefunc.cs</DependentUpon>
+    <Compile Include="estoque.Designer.cs">
+      <DependentUpon>estoque.cs</DependentUpon>
     </Compile>
     <Compile Include="Relatórioadm.cs">
       <SubType>Form</SubType>
@@ -109,29 +103,17 @@
     <Compile Include="Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="PedidosAdm.cs">
+    <Compile Include="Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PedidosAdm.Designer.cs">
-      <DependentUpon>PedidosAdm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PedidosFunc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PedidosFunc.Designer.cs">
-      <DependentUpon>PedidosFunc.cs</DependentUpon>
+    <Compile Include="Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="ProdutosAdm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ProdutosAdm.Designer.cs">
       <DependentUpon>ProdutosAdm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProdutosFunc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProdutosFunc.Designer.cs">
-      <DependentUpon>ProdutosFunc.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,11 +123,8 @@
     <EmbeddedResource Include="ClientesAdm.resx">
       <DependentUpon>ClientesAdm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="estoqueadm.resx">
-      <DependentUpon>estoqueadm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="estoquefunc.resx">
-      <DependentUpon>estoquefunc.cs</DependentUpon>
+    <EmbeddedResource Include="estoque.resx">
+      <DependentUpon>estoque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatórioadm.resx">
       <DependentUpon>Relatórioadm.cs</DependentUpon>
@@ -165,17 +144,11 @@
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PedidosAdm.resx">
-      <DependentUpon>PedidosAdm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PedidosFunc.resx">
-      <DependentUpon>PedidosFunc.cs</DependentUpon>
+    <EmbeddedResource Include="Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProdutosAdm.resx">
       <DependentUpon>ProdutosAdm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProdutosFunc.resx">
-      <DependentUpon>ProdutosFunc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

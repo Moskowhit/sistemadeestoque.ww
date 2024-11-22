@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Teste_Conexao
 {
-    public partial class PedidosAdm : Form
+    public partial class Pedidos : Form
     {
-        public PedidosAdm()
+        public Pedidos()
         {
             InitializeComponent();
         }

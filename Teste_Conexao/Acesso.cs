@@ -161,6 +161,28 @@ namespace Teste_Conexao
         {
 
         }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            System.Drawing.Drawing2D.LinearGradientBrush gradientBrush =
+                new System.Drawing.Drawing2D.LinearGradientBrush(this.ClientRectangle,
+                System.Drawing.Color.FromArgb(34, 139, 34), // Verde mais claro
+                System.Drawing.Color.FromArgb(34, 139, 34),  // Verde mais claro
+                System.Drawing.Drawing2D.LinearGradientMode.Horizontal);
+
+            e.Graphics.FillRectangle(gradientBrush, this.ClientRectangle);
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Cadastro form = new Cadastro();
+            form.Show();
+            this.Visible = false;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

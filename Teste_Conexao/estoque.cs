@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Teste_Conexao
 {
-    public partial class estoqueadm : Form
+    public partial class estoque : Form
     {
         private string connectionString;
 
-        public estoqueadm()
+        public estoque()
         {
             InitializeComponent();
         }

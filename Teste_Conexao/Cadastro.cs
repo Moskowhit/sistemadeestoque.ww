@@ -254,7 +254,7 @@ namespace Teste_Conexao
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Home obj = new Home();
+            Acesso obj = new Acesso();
             this.Hide();
             obj.ShowDialog();
         }
