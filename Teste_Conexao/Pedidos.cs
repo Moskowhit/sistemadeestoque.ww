@@ -51,5 +51,10 @@ namespace Teste_Conexao
         {
 
         }
+
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

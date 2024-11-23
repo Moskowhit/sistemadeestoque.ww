@@ -97,6 +97,7 @@
             this.txtUsuario.Size = new System.Drawing.Size(476, 60);
             this.txtUsuario.TabIndex = 8;
             this.txtUsuario.Text = "Login:";
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             this.txtUsuario.MouseEnter += new System.EventHandler(this.txtUsuario_MouseEnter);
             this.txtUsuario.MouseLeave += new System.EventHandler(this.txtUsuario_MouseLeave);
             // 

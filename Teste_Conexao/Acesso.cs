@@ -30,7 +30,7 @@ namespace Teste_Conexao
         {
 
         }
-
+     
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
             // Defina a string de conexão
@@ -65,17 +65,20 @@ namespace Teste_Conexao
                         if (tipoUsuario == "Administrador")
                         {
                             // Abra o formulário de administrador
-                            Administrador adminForm = new Administrador (); // Suponha que você tenha um formulário chamado 'AdminForm'
+
+                            Administrador adminForm = new Administrador(); // Suponha que você tenha um formulário chamado 'AdminForm'
                             adminForm.Show();
+                            this.Visible = false;
                         }
                         else if (tipoUsuario == "Funcionario")
                         {
                             // Abra o formulário de funcionário
                             Funcionario form = new Funcionario(); // Suponha que você tenha um formulário chamado 'FuncionarioForm'
                             form.Show();
+                            this.Visible = false;
                         }
+                        
 
-                       
                     }
                     else
                     {
@@ -90,6 +93,8 @@ namespace Teste_Conexao
                     MessageBox.Show("Erro ao buscar dados: " + ex.Message);
                 }
             }
+
+           
 
         }
 
@@ -145,6 +150,10 @@ namespace Teste_Conexao
             txtSenha.Text = "Senha:"; // Texto inicial do placeholder
             txtSenha.ForeColor = Color.Gray; // Cor cinza
             txtSenha.UseSystemPasswordChar = true; // Certifica-se de que o modo senha está desativado
+
+         
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -223,7 +232,7 @@ namespace Teste_Conexao
                         if (tipoUsuario == "Administrador")
                         {
                             // Abra o formulário de administrador
-                            Administrador adminForm = new Administrador(); // Suponha que você tenha um formulário chamado 'AdminForm'
+                            Administrador adminForm = new Administrador();  // Suponha que você tenha um formulário chamado 'AdminForm'
                             adminForm.Show();
                         }
                         else if (tipoUsuario == "Funcionario")
@@ -297,6 +306,11 @@ namespace Teste_Conexao
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

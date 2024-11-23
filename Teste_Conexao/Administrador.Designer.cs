@@ -46,12 +46,16 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblMensagembemvindo = new System.Windows.Forms.Label();
+            this.lblVersaoSistema = new System.Windows.Forms.Label();
+            this.progressBarAtualizacao = new System.Windows.Forms.ProgressBar();
+            this.btnatualização = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button8
@@ -143,7 +147,7 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 56);
+            this.label3.Location = new System.Drawing.Point(0, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 23);
             this.label3.TabIndex = 38;
@@ -164,7 +168,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1307, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(1312, 2);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(29, 18);
@@ -176,7 +180,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1340, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(1341, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 18);
@@ -190,7 +194,7 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(9, 22);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 22);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1379, 809);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -248,33 +252,69 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label5.Location = new System.Drawing.Point(431, 7);
+            this.label5.Location = new System.Drawing.Point(648, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(417, 32);
+            this.label5.Size = new System.Drawing.Size(161, 32);
             this.label5.TabIndex = 0;
-            this.label5.Text = "FAZENDA URBANA |  VERSÃO 1.0";
+            this.label5.Text = "Raizes Urbana";
+            this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
-            // lblMensagembemvindo
+            // lblVersaoSistema
             // 
-            this.lblMensagembemvindo.AutoSize = true;
-            this.lblMensagembemvindo.Location = new System.Drawing.Point(424, 419);
-            this.lblMensagembemvindo.Name = "lblMensagembemvindo";
-            this.lblMensagembemvindo.Size = new System.Drawing.Size(35, 13);
-            this.lblMensagembemvindo.TabIndex = 44;
-            this.lblMensagembemvindo.Text = "label6";
+            this.lblVersaoSistema.AutoSize = true;
+            this.lblVersaoSistema.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblVersaoSistema.Location = new System.Drawing.Point(35, 623);
+            this.lblVersaoSistema.Name = "lblVersaoSistema";
+            this.lblVersaoSistema.Size = new System.Drawing.Size(229, 20);
+            this.lblVersaoSistema.TabIndex = 44;
+            this.lblVersaoSistema.Text = "Exibir a versão atual do sistema";
+            this.lblVersaoSistema.Click += new System.EventHandler(this.label6_Click_1);
+            // 
+            // progressBarAtualizacao
+            // 
+            this.progressBarAtualizacao.Location = new System.Drawing.Point(39, 649);
+            this.progressBarAtualizacao.Name = "progressBarAtualizacao";
+            this.progressBarAtualizacao.Size = new System.Drawing.Size(225, 14);
+            this.progressBarAtualizacao.TabIndex = 47;
+            // 
+            // btnatualização
+            // 
+            this.btnatualização.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnatualização.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnatualização.Location = new System.Drawing.Point(54, 669);
+            this.btnatualização.Name = "btnatualização";
+            this.btnatualização.Size = new System.Drawing.Size(181, 32);
+            this.btnatualização.TabIndex = 48;
+            this.btnatualização.Text = "Verificar Atualização";
+            this.btnatualização.UseVisualStyleBackColor = false;
+            this.btnatualização.Click += new System.EventHandler(this.btnatualização_Click_1);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1370, 56);
+            this.panel2.TabIndex = 49;
             // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
-            this.Controls.Add(this.lblMensagembemvindo);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnatualização);
+            this.Controls.Add(this.progressBarAtualizacao);
+            this.Controls.Add(this.lblVersaoSistema);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNotas);
             this.Controls.Add(this.pnlBusca);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button8);
@@ -282,10 +322,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Administrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -296,6 +334,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,6 +359,9 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblMensagembemvindo;
+        private System.Windows.Forms.Label lblVersaoSistema;
+        private System.Windows.Forms.ProgressBar progressBarAtualizacao;
+        private System.Windows.Forms.Button btnatualização;
+        private System.Windows.Forms.Panel panel2;
     }
 }

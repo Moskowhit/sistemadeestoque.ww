@@ -156,6 +156,7 @@
             this.btnGravar.TabIndex = 67;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnLimpar
             // 
