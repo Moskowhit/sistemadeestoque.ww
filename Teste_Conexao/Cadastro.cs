@@ -141,7 +141,7 @@ namespace Teste_Conexao
             }
             Home frm1 = new Home();
             frm1.Show();
-            this.Close();
+            this.Visible = false;
 
 
 

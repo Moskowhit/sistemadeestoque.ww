@@ -93,14 +93,12 @@ namespace Teste_Conexao
                     MessageBox.Show("Erro ao buscar dados: " + ex.Message);
                 }
             }
-
-           
+            
 
         }
 
         
 
-       
 
         private void btnAdministrador_Click(object sender, EventArgs e)
         {

@@ -320,7 +320,7 @@ namespace Teste_Conexao
         {
             estoque form = new estoque();
             form.Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -421,6 +421,13 @@ namespace Teste_Conexao
         private void btnatualização_Click_1(object sender, EventArgs e)
         {
             VerificarNovaAtualizacao();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Relatórioadm form = new Relatórioadm();
+            form.Show();
+            this.Visible = false;
         }
     }
 }

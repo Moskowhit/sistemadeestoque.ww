@@ -44,10 +44,40 @@ namespace Teste_Conexao
         {
 
         }
-
+        private string ObterTipoUsuario()
+        {
+            // Retorna um tipo de usuário fixo para teste
+            // Troque por "Administrador" ou outro tipo, conforme necessário
+            return "Funcionario";
+        }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-       
+            // Suponha que "tipoUsuario" seja uma variável que armazena o tipo do usuário autenticado
+            // Pode ser um valor obtido de um banco de dados, login, ou outro método
+            string tipoUsuario = ObterTipoUsuario(); // Exemplo: "Administrador", "Funcionario", etc.
+
+            switch (tipoUsuario)
+            {
+                case "Funcionario":
+                    Funcionario formFuncionario = new Funcionario();
+                    formFuncionario.Show();
+                    break;
+
+                case "Administrador":
+                    Administrador formAdministrador = new Administrador();
+                    formAdministrador.Show();
+                    break;
+
+                default:
+                    MessageBox.Show("Tipo de usuário inválido!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return; // Interrompe a execução se o tipo de usuário for inválido
+            }
+
+            // Oculta o formulário atual após abrir o próximo
+            this.Hide();
+
+
+
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
