@@ -52,14 +52,14 @@ namespace Teste_Conexao
 
         private void button1_Click(object sender, EventArgs e)
         {
-            estoque form = new estoque();
+            estoqueFuncionario form = new estoqueFuncionario();
             form.Show();
             this.Visible = false;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Pedidos  form = new Pedidos();
+            PedidoAdm  form = new PedidoAdm();
             form.Show();
             this.Visible = false;
         }
@@ -138,6 +138,32 @@ namespace Teste_Conexao
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Acesso form = new Acesso();
+            form.Show();
+            this.Visible = false;
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            estoqueFuncionario form = new estoqueFuncionario();
+            form.Show();
+            this.Visible = false;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PedidoAdm form = new PedidoAdm();
+            form.Show();
+            this.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Relatórioadm form = new Relatórioadm();
             form.Show();
             this.Visible = false;
         }

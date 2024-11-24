@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace Teste_Conexao
 {
-    public partial class Pedidos : Form
+    public partial class PedidoAdm : Form
     {
-        public Pedidos()
+        public PedidoAdm()
         {
             InitializeComponent();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-           
+            Administrador form = new Administrador();
+            form.Show();
+            this.Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -53,6 +55,11 @@ namespace Teste_Conexao
         }
 
         private void btnGravar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

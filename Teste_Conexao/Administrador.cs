@@ -318,7 +318,7 @@ namespace Teste_Conexao
 
         private void button1_Click(object sender, EventArgs e)
         {
-            estoque form = new estoque();
+            estoqueAdm form = new estoqueAdm();
             form.Show();
             this.Visible = false;
         }
@@ -359,28 +359,28 @@ namespace Teste_Conexao
         {
             ProdutosAdm form = new ProdutosAdm();
             form.Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-           Pedidos form = new Pedidos();
+           PedidoAdm form = new PedidoAdm();
             form.Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             ClientesAdm form = new ClientesAdm();
             form.Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             FornecedoresAdm form = new FornecedoresAdm();
             form.Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void pnlBusca_Paint(object sender, PaintEventArgs e)
@@ -428,6 +428,18 @@ namespace Teste_Conexao
             Relatórioadm form = new Relatórioadm();
             form.Show();
             this.Visible = false;
+        }
+
+        private void button4_Click_2(object sender, EventArgs e)
+        {
+            Relatórioadm form = new Relatórioadm();
+            form.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

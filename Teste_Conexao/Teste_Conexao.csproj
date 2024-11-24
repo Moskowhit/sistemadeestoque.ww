@@ -61,11 +61,17 @@
     <Compile Include="ClientesAdm.Designer.cs">
       <DependentUpon>ClientesAdm.cs</DependentUpon>
     </Compile>
-    <Compile Include="estoque.cs">
+    <Compile Include="estoqueAdm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="estoque.Designer.cs">
-      <DependentUpon>estoque.cs</DependentUpon>
+    <Compile Include="estoqueAdm.Designer.cs">
+      <DependentUpon>estoqueAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="estoqueFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estoqueFuncionario.Designer.cs">
+      <DependentUpon>estoqueFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Relatórioadm.cs">
       <SubType>Form</SubType>
@@ -103,11 +109,11 @@
     <Compile Include="Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pedidos.cs">
+    <Compile Include="PedidoAdm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pedidos.Designer.cs">
-      <DependentUpon>Pedidos.cs</DependentUpon>
+    <Compile Include="PedidoAdm.Designer.cs">
+      <DependentUpon>PedidoAdm.cs</DependentUpon>
     </Compile>
     <Compile Include="ProdutosAdm.cs">
       <SubType>Form</SubType>
@@ -123,8 +129,11 @@
     <EmbeddedResource Include="ClientesAdm.resx">
       <DependentUpon>ClientesAdm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="estoque.resx">
-      <DependentUpon>estoque.cs</DependentUpon>
+    <EmbeddedResource Include="estoqueAdm.resx">
+      <DependentUpon>estoqueAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estoqueFuncionario.resx">
+      <DependentUpon>estoqueFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatórioadm.resx">
       <DependentUpon>Relatórioadm.cs</DependentUpon>
@@ -144,8 +153,8 @@
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pedidos.resx">
-      <DependentUpon>Pedidos.cs</DependentUpon>
+    <EmbeddedResource Include="PedidoAdm.resx">
+      <DependentUpon>PedidoAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProdutosAdm.resx">
       <DependentUpon>ProdutosAdm.cs</DependentUpon>
