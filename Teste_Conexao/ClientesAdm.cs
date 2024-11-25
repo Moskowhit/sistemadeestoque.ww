@@ -30,5 +30,10 @@ namespace Teste_Conexao
             form.Show();
             this.Visible = false;
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

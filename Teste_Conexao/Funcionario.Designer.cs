@@ -113,13 +113,14 @@
             this.pnlBusca.Name = "pnlBusca";
             this.pnlBusca.Size = new System.Drawing.Size(693, 291);
             this.pnlBusca.TabIndex = 29;
+            this.pnlBusca.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBusca_Paint);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(4, -32);
+            this.pictureBox3.Location = new System.Drawing.Point(-72, -36);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1045, 575);
+            this.pictureBox3.Size = new System.Drawing.Size(1338, 681);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 48;
             this.pictureBox3.TabStop = false;
@@ -138,6 +139,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1024, 43);
             this.panel2.TabIndex = 50;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label4
             // 
@@ -335,6 +337,7 @@
             this.Controls.Add(this.pnlBusca);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Funcionario";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

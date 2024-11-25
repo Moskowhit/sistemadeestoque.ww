@@ -167,5 +167,15 @@ namespace Teste_Conexao
             form.Show();
             this.Visible = false;
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlBusca_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
