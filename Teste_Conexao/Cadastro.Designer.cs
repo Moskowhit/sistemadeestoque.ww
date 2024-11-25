@@ -62,30 +62,32 @@
             // 
             // pnlBusca
             // 
-            this.pnlBusca.BackColor = System.Drawing.Color.Lime;
+            this.pnlBusca.BackColor = System.Drawing.Color.YellowGreen;
             this.pnlBusca.Controls.Add(this.btnBuscar);
             this.pnlBusca.Controls.Add(this.txtMatricula);
             this.pnlBusca.Controls.Add(this.lblMatricula);
             this.pnlBusca.Controls.Add(this.lblBusca);
             this.pnlBusca.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlBusca.Location = new System.Drawing.Point(42, 78);
+            this.pnlBusca.Location = new System.Drawing.Point(42, 104);
             this.pnlBusca.Name = "pnlBusca";
-            this.pnlBusca.Size = new System.Drawing.Size(852, 101);
+            this.pnlBusca.Size = new System.Drawing.Size(1243, 124);
             this.pnlBusca.TabIndex = 3;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(585, 59);
+            this.btnBuscar.BackColor = System.Drawing.Color.White;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.Location = new System.Drawing.Point(738, 61);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtMatricula
             // 
-            this.txtMatricula.Location = new System.Drawing.Point(346, 62);
+            this.txtMatricula.Location = new System.Drawing.Point(530, 64);
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Size = new System.Drawing.Size(181, 20);
             this.txtMatricula.TabIndex = 2;
@@ -94,7 +96,7 @@
             // lblMatricula
             // 
             this.lblMatricula.AutoSize = true;
-            this.lblMatricula.Location = new System.Drawing.Point(282, 69);
+            this.lblMatricula.Location = new System.Drawing.Point(474, 66);
             this.lblMatricula.Name = "lblMatricula";
             this.lblMatricula.Size = new System.Drawing.Size(50, 13);
             this.lblMatricula.TabIndex = 1;
@@ -103,17 +105,18 @@
             // lblBusca
             // 
             this.lblBusca.AutoSize = true;
-            this.lblBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBusca.Location = new System.Drawing.Point(352, 17);
+            this.lblBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.lblBusca.Location = new System.Drawing.Point(536, 19);
             this.lblBusca.Name = "lblBusca";
-            this.lblBusca.Size = new System.Drawing.Size(206, 20);
+            this.lblBusca.Size = new System.Drawing.Size(243, 24);
             this.lblBusca.TabIndex = 0;
             this.lblBusca.Text = "Pesquisa de Funcionário";
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.YellowGreen;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(843, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(1271, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(29, 18);
@@ -124,8 +127,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.YellowGreen;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(876, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1304, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 18);
@@ -136,11 +140,12 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Lime;
+            this.pictureBox3.BackColor = System.Drawing.Color.YellowGreen;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(42, 9);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(852, 63);
+            this.pictureBox3.Size = new System.Drawing.Size(1333, 63);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -149,7 +154,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(279, 43);
+            this.lblNome.Location = new System.Drawing.Point(481, 105);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(38, 13);
             this.lblNome.TabIndex = 0;
@@ -158,7 +163,7 @@
             // lblRg
             // 
             this.lblRg.AutoSize = true;
-            this.lblRg.Location = new System.Drawing.Point(270, 73);
+            this.lblRg.Location = new System.Drawing.Point(472, 135);
             this.lblRg.Name = "lblRg";
             this.lblRg.Size = new System.Drawing.Size(53, 13);
             this.lblRg.TabIndex = 0;
@@ -167,7 +172,7 @@
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
-            this.lblCpf.Location = new System.Drawing.Point(282, 99);
+            this.lblCpf.Location = new System.Drawing.Point(484, 161);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(35, 13);
             this.lblCpf.TabIndex = 0;
@@ -177,7 +182,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(282, 127);
+            this.lblUsuario.Location = new System.Drawing.Point(484, 189);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(46, 13);
             this.lblUsuario.TabIndex = 0;
@@ -186,7 +191,7 @@
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(282, 149);
+            this.lblSenha.Location = new System.Drawing.Point(484, 211);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(41, 13);
             this.lblSenha.TabIndex = 0;
@@ -194,7 +199,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(329, 40);
+            this.txtNome.Location = new System.Drawing.Point(531, 102);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(219, 20);
             this.txtNome.TabIndex = 1;
@@ -202,7 +207,7 @@
             // 
             // txtRg
             // 
-            this.txtRg.Location = new System.Drawing.Point(329, 66);
+            this.txtRg.Location = new System.Drawing.Point(531, 128);
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(219, 20);
             this.txtRg.TabIndex = 2;
@@ -210,7 +215,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(329, 120);
+            this.txtUsuario.Location = new System.Drawing.Point(531, 182);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(219, 20);
             this.txtUsuario.TabIndex = 4;
@@ -218,7 +223,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(329, 146);
+            this.txtSenha.Location = new System.Drawing.Point(531, 208);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(219, 20);
             this.txtSenha.TabIndex = 5;
@@ -227,30 +232,35 @@
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.White;
             this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLimpar.Location = new System.Drawing.Point(288, 194);
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLimpar.Location = new System.Drawing.Point(490, 256);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(61, 23);
             this.btnLimpar.TabIndex = 8;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnGravar
             // 
-            this.btnGravar.Location = new System.Drawing.Point(363, 194);
+            this.btnGravar.BackColor = System.Drawing.Color.White;
+            this.btnGravar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnGravar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGravar.Location = new System.Drawing.Point(565, 256);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(81, 23);
             this.btnGravar.TabIndex = 6;
             this.btnGravar.Text = "Gravar";
-            this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.UseVisualStyleBackColor = false;
             this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(359, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(544, 63);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(199, 24);
             this.lblTitulo.TabIndex = 0;
@@ -258,27 +268,31 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(537, 194);
+            this.btnExcluir.BackColor = System.Drawing.Color.White;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExcluir.Location = new System.Drawing.Point(739, 256);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(81, 23);
             this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(450, 194);
+            this.btnAlterar.BackColor = System.Drawing.Color.White;
+            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAlterar.Location = new System.Drawing.Point(652, 256);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(81, 23);
             this.btnAlterar.TabIndex = 7;
             this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(328, 92);
+            this.txtCpf.Location = new System.Drawing.Point(530, 154);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(220, 20);
             this.txtCpf.TabIndex = 3;
@@ -286,7 +300,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Lime;
+            this.panel1.BackColor = System.Drawing.Color.YellowGreen;
             this.panel1.Controls.Add(this.txtCpf);
             this.panel1.Controls.Add(this.btnAlterar);
             this.panel1.Controls.Add(this.btnExcluir);
@@ -302,9 +316,9 @@
             this.panel1.Controls.Add(this.lblCpf);
             this.panel1.Controls.Add(this.lblRg);
             this.panel1.Controls.Add(this.lblNome);
-            this.panel1.Location = new System.Drawing.Point(42, 185);
+            this.panel1.Location = new System.Drawing.Point(42, 294);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(852, 229);
+            this.panel1.Size = new System.Drawing.Size(1243, 368);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -313,7 +327,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(930, 473);
+            this.ClientSize = new System.Drawing.Size(1333, 788);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlBusca);

@@ -94,7 +94,7 @@ namespace Teste_Conexao
             {
                 MessageBox.Show("Falha: " + ex.Message);
             }
-            Home frm1 = new Home();
+            Acesso frm1 = new Acesso();
             frm1.Show();
             this.Close();
 

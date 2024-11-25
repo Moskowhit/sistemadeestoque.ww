@@ -143,11 +143,7 @@ namespace Teste_Conexao
 
         private void Acesso_Load(object sender, EventArgs e)
         {
-            txtUsuario.Text = "Nome:"; // Texto inicial do placeholder
-            txtUsuario.ForeColor = Color.Gray; // Cor cinza para o placeholder
-            txtSenha.Text = "Senha:"; // Texto inicial do placeholder
-            txtSenha.ForeColor = Color.Gray; // Cor cinza
-            txtSenha.UseSystemPasswordChar = true; // Certifica-se de que o modo senha está desativado
+            
 
          
 
@@ -262,12 +258,7 @@ namespace Teste_Conexao
 
         private void txtUsuario_MouseEnter(object sender, EventArgs e)
         {
-            // Verifica se o texto atual é o placeholder
-            if (txtUsuario.Text == "Nome:")
-            {
-                txtUsuario.Text = ""; // Limpa o texto
-                txtUsuario.ForeColor = Color.Black; // Muda a cor para texto real
-            }
+            
         }
 
         private void txtUsuario_MouseLeave(object sender, EventArgs e)
@@ -283,22 +274,12 @@ namespace Teste_Conexao
         private void txtSenha_MouseEnter(object sender, EventArgs e)
         {
            
-            if (txtSenha.Text == "Senha:")
-            {
-                txtSenha.Text = ""; // Limpa o texto
-                txtSenha.ForeColor = Color.Black; // Muda para a cor padrão do texto
-                txtSenha.UseSystemPasswordChar = false; // Ativa o modo senha (*)
-            }
+            
         }
 
         private void txtSenha_MouseLeave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtSenha.Text))
-            {
-                txtSenha.UseSystemPasswordChar = true; // Desativa o modo senha
-                txtSenha.Text = "Senha:"; // Restaura o placeholder
-                txtSenha.ForeColor = Color.Gray; // Muda para a cor cinza
-            }
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -307,6 +288,11 @@ namespace Teste_Conexao
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
         {
 
         }

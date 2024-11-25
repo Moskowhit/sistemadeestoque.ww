@@ -40,6 +40,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -98,7 +100,6 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(476, 60);
             this.txtUsuario.TabIndex = 8;
-            this.txtUsuario.Text = "Login:";
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             this.txtUsuario.MouseEnter += new System.EventHandler(this.txtUsuario_MouseEnter);
             this.txtUsuario.MouseLeave += new System.EventHandler(this.txtUsuario_MouseLeave);
@@ -114,7 +115,7 @@
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(476, 63);
             this.txtSenha.TabIndex = 9;
-            this.txtSenha.Text = "Senha:";
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             this.txtSenha.MouseEnter += new System.EventHandler(this.txtSenha_MouseEnter);
             this.txtSenha.MouseLeave += new System.EventHandler(this.txtSenha_MouseLeave);
             // 
@@ -192,6 +193,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGreen;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtUsuario);
             this.panel2.Controls.Add(this.btnCadastrar);
             this.panel2.Controls.Add(this.txtSenha);
@@ -202,6 +205,32 @@
             this.panel2.Size = new System.Drawing.Size(945, 669);
             this.panel2.TabIndex = 66;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.YellowGreen;
+            this.label3.Location = new System.Drawing.Point(96, 147);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 33);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Login:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.YellowGreen;
+            this.label4.Location = new System.Drawing.Point(96, 286);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 33);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Senha:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Acesso
             // 
@@ -244,5 +273,7 @@
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
