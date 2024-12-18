@@ -122,7 +122,7 @@ namespace Teste_Conexao
             string nomeProduto = txtProduto.Text;
             string codigoBarras = txtCodigoBarras.Text;
             int quantidade;
-            string fornecedor = txtFornecedor.Text;
+            string fornecedor = txtFornecedor.Text; 
             DateTime dataEntrada;
 
             // Validações
@@ -139,7 +139,7 @@ namespace Teste_Conexao
             }
 
             // Conexão com o banco de dados
-            string connectionString = @"Server=wesley\sqlexpress;Database=BD_floricultura;Trusted_Connection=True;";
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_DESKTOP;Trusted_Connection=True;";
             string query = "UPDATE Produtos SET NomeProduto = @NomeProduto, Quantidade = @Quantidade, " +
                            "Fornecedor = @Fornecedor, DataEntrada = @DataEntrada " +
                            "WHERE CodigoBarras = @CodigoBarras";
@@ -152,7 +152,7 @@ namespace Teste_Conexao
                 command.Parameters.AddWithValue("@Quantidade", quantidade);
                 command.Parameters.AddWithValue("@Fornecedor", fornecedor);
                 command.Parameters.AddWithValue("@DataEntrada", dataEntrada);
-
+                
                 try
                 {
                     connection.Open();
@@ -187,7 +187,7 @@ namespace Teste_Conexao
             }
 
             // String de conexão com o banco
-            string connectionString = @"Server=wesley\sqlexpress;Database=BD_floricultura;Trusted_Connection=True;";
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_DESKTOP;Trusted_Connection=True;";
             string query = "DELETE FROM Produtos WHERE CodigoBarras = @CodigoBarras";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -254,6 +254,26 @@ namespace Teste_Conexao
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFornecedor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDatadeentrada_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodigoBarras_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

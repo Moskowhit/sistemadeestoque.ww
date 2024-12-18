@@ -62,41 +62,39 @@
             // 
             // pnlBusca
             // 
-            this.pnlBusca.BackColor = System.Drawing.Color.YellowGreen;
+            this.pnlBusca.BackColor = System.Drawing.Color.Lime;
             this.pnlBusca.Controls.Add(this.btnBuscar);
             this.pnlBusca.Controls.Add(this.txtMatricula);
             this.pnlBusca.Controls.Add(this.lblMatricula);
             this.pnlBusca.Controls.Add(this.lblBusca);
             this.pnlBusca.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlBusca.Location = new System.Drawing.Point(42, 104);
+            this.pnlBusca.Location = new System.Drawing.Point(202, 235);
             this.pnlBusca.Name = "pnlBusca";
-            this.pnlBusca.Size = new System.Drawing.Size(1243, 124);
+            this.pnlBusca.Size = new System.Drawing.Size(978, 136);
             this.pnlBusca.TabIndex = 3;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.White;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Location = new System.Drawing.Point(738, 61);
+            this.btnBuscar.Location = new System.Drawing.Point(638, 49);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(94, 33);
             this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtMatricula
             // 
-            this.txtMatricula.Location = new System.Drawing.Point(530, 64);
+            this.txtMatricula.Location = new System.Drawing.Point(405, 62);
             this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(181, 20);
+            this.txtMatricula.Size = new System.Drawing.Size(212, 20);
             this.txtMatricula.TabIndex = 2;
             this.txtMatricula.TextChanged += new System.EventHandler(this.txtMatricula_TextChanged);
             // 
             // lblMatricula
             // 
             this.lblMatricula.AutoSize = true;
-            this.lblMatricula.Location = new System.Drawing.Point(474, 66);
+            this.lblMatricula.Location = new System.Drawing.Point(349, 69);
             this.lblMatricula.Name = "lblMatricula";
             this.lblMatricula.Size = new System.Drawing.Size(50, 13);
             this.lblMatricula.TabIndex = 1;
@@ -105,18 +103,17 @@
             // lblBusca
             // 
             this.lblBusca.AutoSize = true;
-            this.lblBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.lblBusca.Location = new System.Drawing.Point(536, 19);
+            this.lblBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBusca.Location = new System.Drawing.Point(411, 10);
             this.lblBusca.Name = "lblBusca";
-            this.lblBusca.Size = new System.Drawing.Size(243, 24);
+            this.lblBusca.Size = new System.Drawing.Size(206, 20);
             this.lblBusca.TabIndex = 0;
             this.lblBusca.Text = "Pesquisa de Funcionário";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.YellowGreen;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1271, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(1317, 5);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(29, 18);
@@ -127,9 +124,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.YellowGreen;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1304, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1350, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 18);
@@ -140,12 +136,11 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.YellowGreen;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox3.BackColor = System.Drawing.Color.Lime;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(202, 67);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1333, 63);
+            this.pictureBox3.Size = new System.Drawing.Size(978, 150);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -154,7 +149,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(481, 105);
+            this.lblNome.Location = new System.Drawing.Point(349, 39);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(38, 13);
             this.lblNome.TabIndex = 0;
@@ -163,7 +158,7 @@
             // lblRg
             // 
             this.lblRg.AutoSize = true;
-            this.lblRg.Location = new System.Drawing.Point(472, 135);
+            this.lblRg.Location = new System.Drawing.Point(334, 69);
             this.lblRg.Name = "lblRg";
             this.lblRg.Size = new System.Drawing.Size(53, 13);
             this.lblRg.TabIndex = 0;
@@ -172,7 +167,7 @@
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
-            this.lblCpf.Location = new System.Drawing.Point(484, 161);
+            this.lblCpf.Location = new System.Drawing.Point(352, 95);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(35, 13);
             this.lblCpf.TabIndex = 0;
@@ -182,7 +177,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(484, 189);
+            this.lblUsuario.Location = new System.Drawing.Point(341, 121);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(46, 13);
             this.lblUsuario.TabIndex = 0;
@@ -191,7 +186,7 @@
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(484, 211);
+            this.lblSenha.Location = new System.Drawing.Point(346, 147);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(41, 13);
             this.lblSenha.TabIndex = 0;
@@ -199,7 +194,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(531, 102);
+            this.txtNome.Location = new System.Drawing.Point(398, 36);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(219, 20);
             this.txtNome.TabIndex = 1;
@@ -207,7 +202,7 @@
             // 
             // txtRg
             // 
-            this.txtRg.Location = new System.Drawing.Point(531, 128);
+            this.txtRg.Location = new System.Drawing.Point(398, 66);
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(219, 20);
             this.txtRg.TabIndex = 2;
@@ -215,7 +210,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(531, 182);
+            this.txtUsuario.Location = new System.Drawing.Point(398, 118);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(219, 20);
             this.txtUsuario.TabIndex = 4;
@@ -223,7 +218,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(531, 208);
+            this.txtSenha.Location = new System.Drawing.Point(398, 144);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(219, 20);
             this.txtSenha.TabIndex = 5;
@@ -232,35 +227,30 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.BackColor = System.Drawing.Color.White;
             this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLimpar.Location = new System.Drawing.Point(490, 256);
+            this.btnLimpar.Location = new System.Drawing.Point(355, 183);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(61, 23);
+            this.btnLimpar.Size = new System.Drawing.Size(60, 34);
             this.btnLimpar.TabIndex = 8;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnGravar
             // 
-            this.btnGravar.BackColor = System.Drawing.Color.White;
-            this.btnGravar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnGravar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGravar.Location = new System.Drawing.Point(565, 256);
+            this.btnGravar.Location = new System.Drawing.Point(421, 183);
             this.btnGravar.Name = "btnGravar";
-            this.btnGravar.Size = new System.Drawing.Size(81, 23);
+            this.btnGravar.Size = new System.Drawing.Size(80, 34);
             this.btnGravar.TabIndex = 6;
             this.btnGravar.Text = "Gravar";
-            this.btnGravar.UseVisualStyleBackColor = false;
+            this.btnGravar.UseVisualStyleBackColor = true;
             this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(544, 63);
+            this.lblTitulo.Location = new System.Drawing.Point(418, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(199, 24);
             this.lblTitulo.TabIndex = 0;
@@ -268,31 +258,27 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.BackColor = System.Drawing.Color.White;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExcluir.Location = new System.Drawing.Point(739, 256);
+            this.btnExcluir.Location = new System.Drawing.Point(593, 183);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(81, 23);
+            this.btnExcluir.Size = new System.Drawing.Size(80, 34);
             this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
-            this.btnAlterar.BackColor = System.Drawing.Color.White;
-            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAlterar.Location = new System.Drawing.Point(652, 256);
+            this.btnAlterar.Location = new System.Drawing.Point(507, 183);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(81, 23);
+            this.btnAlterar.Size = new System.Drawing.Size(80, 34);
             this.btnAlterar.TabIndex = 7;
             this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(530, 154);
+            this.txtCpf.Location = new System.Drawing.Point(397, 92);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(220, 20);
             this.txtCpf.TabIndex = 3;
@@ -300,7 +286,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel1.BackColor = System.Drawing.Color.Lime;
             this.panel1.Controls.Add(this.txtCpf);
             this.panel1.Controls.Add(this.btnAlterar);
             this.panel1.Controls.Add(this.btnExcluir);
@@ -316,9 +302,9 @@
             this.panel1.Controls.Add(this.lblCpf);
             this.panel1.Controls.Add(this.lblRg);
             this.panel1.Controls.Add(this.lblNome);
-            this.panel1.Location = new System.Drawing.Point(42, 294);
+            this.panel1.Location = new System.Drawing.Point(202, 390);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1243, 368);
+            this.panel1.Size = new System.Drawing.Size(978, 229);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -327,7 +313,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1333, 788);
+            this.ClientSize = new System.Drawing.Size(1386, 734);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlBusca);

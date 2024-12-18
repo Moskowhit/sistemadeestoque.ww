@@ -172,6 +172,19 @@ namespace Teste_Conexao
         {
 
         }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Administrador form = new Administrador();
+            form.Show();
+            this.Visible = false;
+        }
     }
 
     }

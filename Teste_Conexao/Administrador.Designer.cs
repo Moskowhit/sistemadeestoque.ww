@@ -265,7 +265,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label5.Location = new System.Drawing.Point(648, 10);
+            this.label5.Location = new System.Drawing.Point(648, 2);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(161, 32);
             this.label5.TabIndex = 0;

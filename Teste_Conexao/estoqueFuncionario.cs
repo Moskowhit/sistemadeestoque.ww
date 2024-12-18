@@ -57,5 +57,17 @@ namespace Teste_Conexao
             form.Show();
             this.Visible = false;
         }
+
+        private void estoqueFuncionario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Funcionario form = new Funcionario();
+            form.Show();
+            this.Visible = false;
+        }
     }
 }

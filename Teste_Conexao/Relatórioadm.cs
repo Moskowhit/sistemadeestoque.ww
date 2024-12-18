@@ -346,5 +346,12 @@ namespace Teste_Conexao
                 currentY += cellHeight; // Move para a próxima linha
             }
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Funcionario form = new Funcionario();
+            form.Show();
+            this.Visible = false;
+        }
     }
 }

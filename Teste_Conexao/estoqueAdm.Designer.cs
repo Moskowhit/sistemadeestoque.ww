@@ -42,7 +42,10 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,6 +54,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -67,9 +72,9 @@
             // 
             this.btnbuscarproduto.AccessibleDescription = "bus";
             this.btnbuscarproduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnbuscarproduto.Location = new System.Drawing.Point(620, 291);
+            this.btnbuscarproduto.Location = new System.Drawing.Point(569, 291);
             this.btnbuscarproduto.Name = "btnbuscarproduto";
-            this.btnbuscarproduto.Size = new System.Drawing.Size(201, 23);
+            this.btnbuscarproduto.Size = new System.Drawing.Size(226, 42);
             this.btnbuscarproduto.TabIndex = 82;
             this.btnbuscarproduto.Text = "Buscar";
             this.btnbuscarproduto.UseVisualStyleBackColor = false;
@@ -78,9 +83,9 @@
             // txtBuscarProduto
             // 
             this.txtBuscarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarProduto.Location = new System.Drawing.Point(620, 262);
+            this.txtBuscarProduto.Location = new System.Drawing.Point(569, 262);
             this.txtBuscarProduto.Name = "txtBuscarProduto";
-            this.txtBuscarProduto.Size = new System.Drawing.Size(202, 23);
+            this.txtBuscarProduto.Size = new System.Drawing.Size(226, 23);
             this.txtBuscarProduto.TabIndex = 81;
             this.txtBuscarProduto.TextChanged += new System.EventHandler(this.txtBuscarProduto_TextChanged);
             // 
@@ -88,7 +93,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label4.Location = new System.Drawing.Point(671, 236);
+            this.label4.Location = new System.Drawing.Point(636, 236);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 13);
             this.label4.TabIndex = 80;
@@ -99,7 +104,7 @@
             this.lblBusca.AutoSize = true;
             this.lblBusca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBusca.Location = new System.Drawing.Point(635, 193);
+            this.lblBusca.Location = new System.Drawing.Point(591, 193);
             this.lblBusca.Name = "lblBusca";
             this.lblBusca.Size = new System.Drawing.Size(175, 20);
             this.lblBusca.TabIndex = 79;
@@ -120,7 +125,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.YellowGreen;
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.pictureBox10);
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -192,7 +198,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(-14, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1397, 743);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,23 +206,59 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label3
+            // label17
             // 
-            this.label3.BackColor = System.Drawing.Color.YellowGreen;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 35);
-            this.label3.TabIndex = 63;
-            this.label3.Text = "Estoque";
+            this.label17.BackColor = System.Drawing.Color.YellowGreen;
+            this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(3, -2);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(186, 39);
+            this.label17.TabIndex = 59;
+            this.label17.Text = "Estoque";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.YellowGreen;
+            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(112, 3);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(46, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 60;
+            this.pictureBox10.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 732);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1386, 56);
+            this.panel2.TabIndex = 95;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.YellowGreen;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label2.Location = new System.Drawing.Point(605, 1);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(161, 32);
+            this.label2.TabIndex = 82;
+            this.label2.Text = "Raizes Urbana";
             // 
             // estoqueAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnbuscarproduto);
@@ -243,6 +285,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,6 +307,9 @@
         private System.Windows.Forms.Label lblBusca;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
     }
 }

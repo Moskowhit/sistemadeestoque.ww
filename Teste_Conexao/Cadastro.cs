@@ -66,34 +66,41 @@ namespace Teste_Conexao
         private void btnGravar_Click(object sender, EventArgs e)
         {
 
-            //criar uma conexao
-            conexao = clnConexao.getConexao();
-            //criar um objeto Funcionario 
-            Model.Funcionario func = new Model.Funcionario();
-            // popular comos dados do  formulário
-            func.NomeFunc = txtNome.Text;
-            func.RgFunc = txtRg.Text;
-            func.CpfFunc = txtCpf.Text;
-            func.NomeUser = txtUsuario.Text;
-            func.SenhaUser = txtSenha.Text;
+            // Captura os valores dos campos de entrada
+            string nomeFunc = txtNome.Text;
+            string matricula = txtMatricula.Text;
+            string setor = txtSetor.Text;
+            string nomeUser = txtUsuario.Text;
+            string senhaUser = txtSenha.Text;
+            string tipoUsuario = "Funcionario"; // Definido como "Funcionario" por padrão, você pode ajustar conforme a lógica do sistema
 
-            //criar um objeto FuncionarioDAL 
-            FuncionarioDAL funcDal = new FuncionarioDAL();
-            //e executar a inserção
-            try
-            {
-                //abrir a conexao
-                funcDal.abrirConexao(conexao);
-                //executar o insert
-                funcDal.adicionar(conexao, func);
+            // String de conexão
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_DESKTOP;Trusted_Connection=True;";
+            string query = "INSERT INTO Funcionarios (nome_func, matricula, setor, nome_user, senha_user, tipo_usuario) " +
+                           "VALUES (@NomeFunc, @Matricula, @Setor, @NomeUser, @SenhaUser, @TipoUsuario)";
 
-                MessageBox.Show("Criado usuario com sucesso!");
-                btnLimpar.PerformClick();
-            }
-            catch (Exception ex)
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                MessageBox.Show("Falha: " + ex.Message);
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@NomeFunc", nomeFunc);
+                command.Parameters.AddWithValue("@Matricula", matricula);
+                command.Parameters.AddWithValue("@Setor", setor);
+                command.Parameters.AddWithValue("@NomeUser", nomeUser);
+                command.Parameters.AddWithValue("@SenhaUser", senhaUser);
+                command.Parameters.AddWithValue("@TipoUsuario", tipoUsuario);
+
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Funcionário gravado com sucesso!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao gravar funcionário: " + ex.Message);
+                }
             }
+
             Acesso frm1 = new Acesso();
             frm1.Show();
             this.Close();
@@ -103,96 +110,74 @@ namespace Teste_Conexao
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtNome.Clear();
-            txtCpf.Clear();
-            txtRg.Clear();
-            txtSenha.Clear();
+            txtMatricula.Clear();
+            txtSetor.Clear();
             txtUsuario.Clear();
+            txtSenha.Clear();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            //criar uma conexao
-            conexao = clnConexao.getConexao();
-            //criar um objeto Funcionario 
-            Model.Funcionario func = new Model.Funcionario();
-            // popular comos dados do  formulário
-            func.NomeFunc = txtNome.Text;
-            func.RgFunc = txtRg.Text;
-            func.CpfFunc = txtCpf.Text;
-            func.NomeUser = txtUsuario.Text;
-            func.SenhaUser = txtSenha.Text;
-
-            //criar um objeto FuncionarioDAL 
-            FuncionarioDAL funcDal = new FuncionarioDAL();
-            //e executar a inserção
-            try
-            {
-                //abrir a conexao
-                funcDal.abrirConexao(conexao);
-                //executar o insert
-                funcDal.adicionar(conexao, func);
-
-                MessageBox.Show("Criado usuario com sucesso!");
-                btnLimpar.PerformClick();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Falha: " + ex.Message);
-            }
-            Home frm1 = new Home();
-            frm1.Show();
-            this.Visible = false;
-
+            
 
 
 
         }
 
-       
+        private void LimparCampos()
+        {
+            txtNome.Clear();
+            txtMatricula.Clear();
+            txtSetor.Clear();
+            txtUsuario.Clear();
+            txtSenha.Clear();
+        }
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
+            // Captura os valores dos campos de entrada
+            string nomeFunc = txtNome.Text;
+            string matricula = txtMatricula.Text; // Usada como chave para identificar o registro
+            string setor = txtSetor.Text;
+            string nomeUser = txtUsuario.Text;
+            string senhaUser = txtSenha.Text;
+            string tipoUsuario = "Funcionario"; // Definido como "Funcionario" por padrão, pode ser ajustado conforme necessário
 
-             //criar uma conexao
-            conexao = clnConexao.getConexao();
-            int matr = 0;
-            try
-            {
-                //recuperar o id(matricula) do Form(textBox)
-                matr = Convert.ToInt32(txtMatricula.Text);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Falha ao converter! " +
-                    "Digite somente números" + ex.Message);
-            }
-            //criar um objeto Funcionario 
-            Model.Funcionario func = new Model.Funcionario();
-            func.IdFunc = matr;
-            // popular comos dados do  formulário
-            func.NomeFunc = txtNome.Text;
-            func.RgFunc = txtRg.Text;
-            func.CpfFunc = txtCpf.Text;
-            func.NomeUser = txtUsuario.Text;
-            func.SenhaUser = txtSenha.Text;
+            // String de conexão
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_DESKTOP;Trusted_Connection=True;";
+            string query = "UPDATE Funcionarios SET nome_func = @NomeFunc, setor = @Setor, nome_user = @NomeUser, senha_user = @SenhaUser, tipo_usuario = @TipoUsuario " +
+                           "WHERE matricula = @Matricula";
 
-            //criar um objeto FuncionarioDAL 
-            FuncionarioDAL funcDal = new FuncionarioDAL();
-            //e executar a inserção
-            try
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                //abrir a conexao
-                funcDal.abrirConexao(conexao);
-                //executar o insert
-                funcDal.alterar(conexao, func);
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@NomeFunc", nomeFunc);
+                command.Parameters.AddWithValue("@Setor", setor);
+                command.Parameters.AddWithValue("@NomeUser", nomeUser);
+                command.Parameters.AddWithValue("@SenhaUser", senhaUser);
+                command.Parameters.AddWithValue("@TipoUsuario", tipoUsuario);
+                command.Parameters.AddWithValue("@Matricula", matricula);
 
-                MessageBox.Show("Dados alterados com sucesso!");
-                btnLimpar.PerformClick();
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Funcionário alterado com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Funcionário não encontrado.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao alterar funcionário: " + ex.Message);
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Falha: " + ex.Message);
-            }
+
 
 
         }
@@ -204,40 +189,34 @@ namespace Teste_Conexao
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(txtMatricula.Text, out int idFunc))
-            {
-                MessageBox.Show("Por favor, insira um número válido na matrícula.");
-                return;
-            }
+            string matricula = txtMatricula.Text;
 
-            try
-            {
-                string strConexao = @"Server=WESLEY\SQLEXPRESS;Database=BD_DESKTOP;Integrated Security=True";
-                string cmdDelete = "DELETE FROM funcionarios WHERE id_func = @idFunc";
+            string connectionString = @"Server=wesley\sqlexpress;Database=BD_DESKTOP;Trusted_Connection=True;";
+            string query = "DELETE FROM Funcionarios WHERE Matricula = @Matricula";
 
-                using (SqlConnection con = new SqlConnection(strConexao))
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Matricula", matricula);
+
+                try
                 {
-                    using (SqlCommand sqlCommand = new SqlCommand(cmdDelete, con))
-                    {
-                        sqlCommand.Parameters.AddWithValue("@idFunc", idFunc);
-                        con.Open();
-                        int rowsAffected = sqlCommand.ExecuteNonQuery();
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
 
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Funcionário excluído com sucesso!");
-                            btnLimpar.PerformClick(); // Limpar os campos
-                        }
-                        else
-                        {
-                            MessageBox.Show("Funcionário não encontrado.");
-                        }
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Usuário excluído com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuário não encontrado.");
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Erro ao excluir o funcionário: {ex.Message}");
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao excluir usuário: " + ex.Message);
+                }
             }
         }
 

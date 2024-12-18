@@ -16,6 +16,7 @@ namespace Model
         protected double preco;
         protected int quant;
         protected string medida;
+        
       
 
         public int Codbar_prod
@@ -30,6 +31,9 @@ namespace Model
                 codbar_prod = value;
             }
         }
+       
+
+
 
         public string NomeProd
         {

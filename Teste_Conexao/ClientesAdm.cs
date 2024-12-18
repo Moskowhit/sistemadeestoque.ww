@@ -30,5 +30,22 @@ namespace Teste_Conexao
             form.Show();
             this.Visible = false;
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Administrador form = new Administrador();
+            form.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
